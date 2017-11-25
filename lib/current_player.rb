@@ -8,8 +8,9 @@ def turn_count(board)
   return 9-counter
 end
 
-def current_player(count)
-  player = count % 2
+def current_player(board)
+  player = turncount(board)
+  player = player % 2
   if player == 1
     return "X"
   else
