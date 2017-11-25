@@ -9,7 +9,7 @@ def turn_count(board)
 end
 
 def current_player(board)
-  player = turncount(board)
+  player = turn_count(board)
   player = player % 2
   if player == 1
     return "O"
